@@ -1,11 +1,11 @@
 var express = require('express');
 var app = express();
 
-app.set('port', (process.env.PORT || 5000));
+app.use(express.static('views/pages'));
+app.get('/', function (req, res) {
+  res.sendFile(__dirname+"/views/pages/index.html")
+});
 
-var connect = require('connect');
-var serveStatic = require('serve-static');
-connect().use(serveStatic("./views/pages").listen(8080, function(){
-  
-}));
-
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
+});
