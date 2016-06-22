@@ -109,13 +109,7 @@ h3 {
     padding: 25px;
 }
 
-form {
-    width: 590px;
-    padding: 10px 0;
-    float: left;
-    background: url(../images/dots.gif) right top repeat-y;
-    height: 80px;
-}
+
 
 h2 {
     font-family: Georgia;
@@ -151,6 +145,7 @@ a {
 }
 
 #trailer {
+      z-index: -100;
     position: fixed;
     top: 0;
     right: 0;
