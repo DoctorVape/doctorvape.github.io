@@ -1,0 +1,15 @@
+.border {
+    border: orangered dashed 2px;
+}
+.helper1 {
+    @extend .border;
+	background: pink;
+}
+.helper2 {
+    @extend .border;
+	background: lightcyan;
+}
+.helper3 {
+    @extend .border;
+	background: blueviolet
+}
