@@ -1,0 +1,9 @@
+header
+    ul#nav
+        mixin link(address, title)
+            li 
+                a(href=address)=title
+        +link("#", "О нас")           
+        +link("#", "Товары")           
+        +link("#", "Сообщество")           
+        +link("#", "Контакты")
