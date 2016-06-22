@@ -1,0 +1,13 @@
+
+.bg_move {
+position:fixed; /*удалите строку если надо что бы видео прокручивалось вместе со страницей*/
+min-width:100%; /*ширина видео*/
+min-height:100%; /*высота видео*/
+z-index:1;
+top:0;
+left:0;
+}
+.bg_move_wrapper {
+position: relative;
+z-index:2;
+}
