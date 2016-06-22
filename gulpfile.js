@@ -12,12 +12,12 @@ const SrcDir="./src"
 gulp.task('pug', function () {
     return gulp.src(SrcDir+'/*.pug')
 
-        .pipe(pug({ yourTemplate: 'Components' })).pipe(gulp.dest(OutDir))
+        .pipe(pug({ yourTemplate: 'templates' })).pipe(gulp.dest(OutDir))
     // => build/views/example.html 
 });
 
 gulp.task('sass', () =>
-    gulp.src(SrcDir+'/Styles/*.scss').pipe(sass({ includePaths: require('node-normalize-scss').includePaths })).pipe(gulp.dest(OutDir)));
+    gulp.src(SrcDir+'/styles/*.scss').pipe(sass({ includePaths: require('node-normalize-scss').includePaths })).pipe(gulp.dest(OutDir)));
 
 
 gulp.task('autoprefixer', ['sass'], function () {
@@ -41,8 +41,8 @@ gulp.task('webserver', function () {
         }));
 });
 gulp.task('watch', ['sass', 'pug'], () => {
-    gulp.watch(SrcDir+'/Styles/*.scss', ['sass']);
-    gulp.watch(SrcDir+'/Components/*.pug', ['pug']);
+    gulp.watch(SrcDir+'/styles/*.scss', ['sass']);
+    gulp.watch(SrcDir+'/templates/*.pug', ['pug']);
     gulp.watch(SrcDir+'/*.pug', ['pug']);
 })
 
