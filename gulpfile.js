@@ -12,7 +12,7 @@ const SrcDir="./src"
 gulp.task('pug', function () {
     return gulp.src(SrcDir+'/*.pug')
 
-        .pipe(pug({ yourTemplate: 'Components' })).pipe(gulp.dest(OutDir));
+        .pipe(pug({ yourTemplate: 'components' })).pipe(gulp.dest(OutDir));
     // => build/views/example.html 
 });
 
@@ -45,7 +45,7 @@ gulp.task('webserver', function () {
 });
 gulp.task('watch', ['sass', 'pug'], () => {
     gulp.watch(SrcDir+'/styles/*.scss', ['sass']);
-    gulp.watch(SrcDir+'/Components/*.pug', ['pug']);
+    gulp.watch(SrcDir+'/components/*.pug', ['pug']);
     gulp.watch(SrcDir+'/*.pug', ['pug']);
 })
 

@@ -1,17 +1,9 @@
 doctype html
 html(lang="en")
   head
+    link(rel='stylesheet', href='styles/normalize.css')    
     link(rel='stylesheet', href='styles/style.css')
      
   body
-    .flex-row
-      header.row-100
-        h3.title
-          |doctor vape
-    .flex-row.center.helper1
-      .col-1-of-3.helper2.high
-      .col-1-of-3.helper3.high
-      .col-1-of-3.helper2.high
-      
-    
-    
+      include components/header.pug
+      include components/section1.pug

@@ -1,27 +1,21 @@
-$header_backgr : rgba(8,137,239,1);
-@import 'grid';
-<<<<<<< HEAD
-html,body {
-    height: 100%;
-}
-=======
->>>>>>> 3de03de5dbb3d2a578f8c7ef233b07138f45d6cc
-
+//@import 'grid';
 header {
-    margin: 0;
-    padding: 0;
-    background-color: $header_backgr;
-    height: 55px;
-    color: white;
-    //opacity: 0.9;
+    width:100%;
+    border-top: 1px solid rgb(235,235,235);
+    border-bottom: 1px solid rgb(235,235,235);
 }
-.title {
+#nav li{
+    display: inline;
+    padding: 0 20px;
+}
+#nav {
     text-align: center;
-    font-weight: 500;
-    font-size: 20px;
-    margin-top: 17px;
-<<<<<<< HEAD
 }
-=======
+a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: #525252;        
+    }
 }
->>>>>>> 3de03de5dbb3d2a578f8c7ef233b07138f45d6cc
+
