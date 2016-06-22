@@ -310,11 +310,16 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
 }
- @media (min-aspect-ratio: 16/9) {
+
+
+/*@media (min-aspect-ratio: 16/9) {
      #trailer > video { height: 300%; top: -100%; }
  }
  @media (max-aspect-ratio: 16/9) {
      #trailer > video { width: 300%; left: -100%; }
- }
+ }*/
