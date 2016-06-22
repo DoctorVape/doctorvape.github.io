@@ -1,0 +1,12 @@
+// @import 'helpers';
+// @import 'grid';
+#sec1 {
+    height: 600px;
+    overflow: hidden;
+}
+.full-width-img {
+    width:100vw;
+    height: 600px;
+    object-fit: cover;
+    opacity: 0.9;
+}
