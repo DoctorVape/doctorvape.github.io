@@ -71,10 +71,8 @@ body {
 
 
 .logo_box {
-    width: 349px;
     float: left;
     border-right: 1px solid #303030;
-    height: 280px;
     position: relative;
 }
 
@@ -187,4 +185,8 @@ body{
 }
 .min-w-500{
     width: 500px;
+}
+
+#logow{
+    object-fit: contain;
 }
