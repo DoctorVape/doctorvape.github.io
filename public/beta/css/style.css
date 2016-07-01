@@ -1273,3 +1273,11 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-social-icons > a i {
   font-size: 26px;
 }
+@media (max-height:700px) {
+  #gmap_canvas {
+      height: 300px;
+  }
+  #map1 {
+      height: 300px;    
+  }
+}
