@@ -1252,7 +1252,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(0, 0, 0, 0.2);
   box-shadow: none;
 }
-#footer #btn-submit {
+input[id="btn-submit form-submit"].btn.btn-send-message.btn-md {
   color: rgba(255, 255, 255, 0.9) !important;
   background: #4CB648 !important;
 }
