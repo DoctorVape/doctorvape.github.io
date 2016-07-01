@@ -5,16 +5,9 @@
   font-weight: normal;
   font-style: normal;
 }
-
-@font-face {
-  font-family: "TTDrugs";
-  src: url("../fonts/icomoon/Intro-Cond-Light.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
 body {
-  font-family: "Raleway", Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -41,7 +34,6 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
-  font-family: "TTDrugs", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -72,7 +64,6 @@ h1, h2, h3, h4, h5, h6, figure {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Raleway", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 30px;
