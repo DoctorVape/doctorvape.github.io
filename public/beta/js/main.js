@@ -14,7 +14,22 @@ $(document).ready(function () {
 		$('html, body').animate({ scrollTop: 0 }, 1500);
 	})
 
+	$("#form-submit").click(function () {
+		$("#contact-form").submit(function (e) {
+			console.log("kke");
+			var url = "path/to/your/script.php"; // the script where you handle the form input.
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: $("#idForm").serialize(), // serializes the form's elements.
+				success: function (data) {
+					alert(data); // show response from the php script.
+				}
+			});
 
+			e.preventDefault(); // avoid to execute the actual submit of the form.
+		});
+	});
 });
 
 function check() {
