@@ -1,9 +1,10 @@
 
 
 $(document).ready(function () {
-	$(".nav-links").click(function () {
+	$(".nav-links").click(function (e) {
 		console.log()
-		var link = "#fh5co-" + $(this).attr("href").replace('#', "");
+		e.preventDefault();
+		var link =  $(this).attr("href");
 		console.log(link);
 		$('html, body').animate({
 			scrollTop: $(link).offset().top
