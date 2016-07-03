@@ -46,10 +46,10 @@ app.post('/sendmail', function (req, res) {
 
   // setup e-mail data with unicode symbols
   var mailOptions = {
-    from: "\"" + req.body.sender + "\"" + '<me@doctorvape.com.ua>', // sender address
+    from: "\"" + req.body.email + "\"" + '<me@doctorvape.com.ua>', // sender address
     to: 'me@doctorvape.com.ua', // list of receivers
     subject: req.body.title, // Subject line
-    text: req.body.text + " \n contact me " + req.body.sender, // plaintext body
+    text: req.body.text + " \n contact me " + req.body.email, // plaintext body
     html: req.body.text // html body
   };
   var result;
