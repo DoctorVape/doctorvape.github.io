@@ -50,7 +50,7 @@ app.post('/sendmail', function (req, res) {
     to: 'me@doctorvape.com.ua', // list of receivers
     subject: req.body.title, // Subject line
     text: req.body.text + " \n contact me " + req.body.email, // plaintext body
-    html: req.body.text // html body
+    html: req.body.text + " <br> contact me " + req.body.email,// html body
   };
   var result;
    transporter.sendMail(mailOptions, function (error, info) {
