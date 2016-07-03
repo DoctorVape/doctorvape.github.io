@@ -33,6 +33,7 @@ $(document).ready(function () {
 			data: data, // serializes the form's elements.
 			beforeSend: function () {
 			   //loading animation
+			   $("#contact-form").replaceWith("<img id=\"contact-form\" src=\"http://i.stack.imgur.com/MnyxU.gif\">")
 			},
 			success: function (data) {
 				$("#contact-form").replaceWith("<h3 class=\"section-title\"> " + data + " </h3>")
