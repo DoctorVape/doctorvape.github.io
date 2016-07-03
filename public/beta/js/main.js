@@ -4,7 +4,7 @@ $(document).ready(function () {
 	$(".nav-links").click(function (e) {
 		console.log()
 		e.preventDefault();
-		var link =  $(this).attr("href");
+		var link = $(this).attr("href");
 		console.log(link);
 		$('html, body').animate({
 			scrollTop: $(link).offset().top
@@ -15,16 +15,27 @@ $(document).ready(function () {
 		$('html, body').animate({ scrollTop: 0 }, 1500);
 	})
 
-		$("#contact-form").submit(function (e) {
-		e.preventDefault();
-		console.log("kke");
-		var url = "/"; // the script where you handle the form input.
+	$("#contact-form").submit(function (e) {
+		var form = $("#contact-form");
+		var url = "/sendmail"; // the script where you handle the form input.
+		var data = JSON.stringify({
+			title: form.find("#name").val(),
+			email: form.find("#email").val(),
+			text: form.find("#message").val()
+		});
+		console.log(data);
 		$.ajax({
+
 			type: "POST",
 			url: url,
-			data: $("#contact-form").serialize(), // serializes the form's elements.
+			dataType: 'json',
+			contentType: 'application/json',
+			data: data, // serializes the form's elements.
+			beforeSend: function () {
+			   //loading animation
+			},
 			success: function (data) {
-				alert(data); // show response from the php script.
+				$("#contact-form").replaceWith("<h3 class=\"section-title\"> " + data + " </h3>")
 			}
 		});
 
