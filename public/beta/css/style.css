@@ -16,15 +16,15 @@ body {
   height: 100%;
   position: relative;
 }
-
+/*rgb(152,76,149)*/
 a {
-  color: #27E1CE;
+  color: rgb(152,76,149);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #27E1CE;
+  color: rgb(152,76,149);
   outline: none;
 }
 
@@ -40,17 +40,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #27E1CE;
+  background: rgb(152,76,149);
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #27E1CE;
+  background: rgb(152,76,149);
 }
 
 ::selection {
   color: #fff;
-  background: #27E1CE;
+  background: rgb(152,76,149);
 }
 
 #scrollTop {
@@ -86,9 +86,9 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #27E1CE;
+  background: rgb(152,76,149);
   color: #fff;
-  border: 2px solid #27E1CE;
+  border: 2px solid rgb(152,76,149);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #3de4d3 !important;
@@ -96,11 +96,11 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #27E1CE;
-  border: 2px solid #27E1CE;
+  color: rgb(152,76,149);
+  border: 2px solid rgb(152,76,149);
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #27E1CE;
+  background: rgb(152,76,149);
   color: #fff;
 }
 
@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #27E1CE;
+  border-color: rgb(152,76,149);
 }
 
 .fh5co-social {
@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 7px;
 }
 .fh5co-social li a:hover {
-  color: #27E1CE;
+  color: rgb(152,76,149);
 }
 .fh5co-social li a:hover, .fh5co-social li a:active, .fh5co-social li a:focus {
   outline: none;
@@ -335,7 +335,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: black;
 }
 #fh5co-header h1 a > span {
-  color: #27E1CE;
+  color: rgb(152,76,149);
 }
 #fh5co-header h1 a:hover, #fh5co-header h1 a:active, #fh5co-header h1 a:focus {
   text-decoration: none;
@@ -348,7 +348,7 @@ h1, h2, h3, h4, h5, h6, figure {
   content: '';
   width: 8px;
   height: 8px;
-  background: #27E1CE;
+  background: rgb(152,76,149);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -402,7 +402,7 @@ h1, h2, h3, h4, h5, h6, figure {
   bottom: 7px;
   left: 10px;
   right: 10px;
-  background-color: #27E1CE;
+  background-color: rgb(152,76,149);
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -417,7 +417,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header nav ul li a:hover {
   text-decoration: none;
-  color: #27e1ce;
+  color: rgb(152,76,149);
 }
 #fh5co-header nav ul li a:hover:after {
   visibility: visible;
@@ -439,8 +439,8 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-right: 16px !important;
   padding-top: 7px !important;
   padding-bottom: 7px !important;
-  border: 2px solid #27e1ce;
-  color: #27E1CE;
+  border: 2px solid rgb(152,76,149);
+  color: rgb(152,76,149);
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -448,7 +448,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-header nav ul li.cta a:hover {
   color: #fff;
-  background: #27E1CE;
+  background: rgb(152,76,149);
 }
 #fh5co-header nav ul li.cta a:hover:after {
   display: none;
@@ -556,7 +556,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   font-size: 40px;
-  color: #27E1CE;
+  color: rgb(152,76,149);
 }
 #fh5co-services-section .services .desc {
   padding-left: 70px;
@@ -621,7 +621,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 18px;
 }
 .wrap-testimony .testimony-slide span a.twitter {
-  color: #27E1CE;
+  color: rgb(152,76,149);
   font-weight: 300;
 }
 .wrap-testimony .testimony-slide figure {
@@ -674,7 +674,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #27E1CE;
+  border: 2px solid rgb(152,76,149);
 }
 
 #fh5co-blog-section .item-grid {
@@ -830,10 +830,10 @@ h1, h2, h3, h4, h5, h6, figure {
   top: .3em;
   left: 0;
   font-size: 22px;
-  color: #27E1CE;
+  color: rgb(152,76,149);
 }
 .contact-info li a {
-  color: #27E1CE;
+  color: rgb(152,76,149);
 }
 
 #map {
@@ -950,10 +950,10 @@ h1, h2, h3, h4, h5, h6, figure {
   text-decoration: none !important;
 }
 #fh5co-offcanvas ul li a:hover {
-  color: #27E1CE;
+  color: rgb(152,76,149);
 }
 #fh5co-offcanvas ul li.active a {
-  color: #27E1CE;
+  color: rgb(152,76,149);
 }
 #fh5co-offcanvas ul li.cta {
   margin-left: 0;
