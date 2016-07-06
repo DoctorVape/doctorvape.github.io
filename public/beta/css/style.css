@@ -358,7 +358,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 38px 0 0 0;
 }
 #fh5co-header nav {
-  float: right;
+  text-align: center;
   padding: 0;
 }
 @media screen and (max-width: 768px) {
@@ -1280,4 +1280,12 @@ input[id="btn-submit form-submit"].btn.btn-send-message.btn-md {
   #map1 {
       height: 300px;    
   }
+}
+#logo-img {
+  height: 50vh;
+  /*text-align: center;
+  margin: auto;*/
+}
+.fl-div {
+  text-align: center;
 }
