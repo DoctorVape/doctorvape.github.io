@@ -928,6 +928,10 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 275px;
   background: black;
   padding: 30px;
+  transform: translateX(275px);
+}
+.showing {
+  transform: translateX(0px)!important;
 }
 @media screen and (max-width: 768px) {
   #fh5co-offcanvas {

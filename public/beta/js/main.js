@@ -178,7 +178,7 @@ document.addEventListener('scroll', check);
 
 		$('body').on('click', '.js-fh5co-nav-toggle', function (event) {
 			var $this = $(this);
-
+			$("#fh5co-offcanvas").toggleClass("showing");
 			$('body').toggleClass('fh5co-overflow offcanvas-visible');
 			$this.toggleClass('active');
 			event.preventDefault();
