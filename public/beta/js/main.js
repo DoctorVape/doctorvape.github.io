@@ -195,6 +195,7 @@ document.addEventListener('scroll', check);
 		$(window).scroll(function () {
 			if ($('body').hasClass('offcanvas-visible')) {
 				$('body').removeClass('offcanvas-visible');
+				$("#fh5co-offcanvas").toggleClass("showing");
 				$('.js-fh5co-nav-toggle').removeClass('active');
 			}
 		});
