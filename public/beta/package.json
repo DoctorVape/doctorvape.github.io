@@ -1,0 +1,27 @@
+{
+  "name": "Dr.Vape",
+  "version": "0.2.5",
+  "description": "Dr.Vape",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "4.13.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "latest",
+    "gulp-jstransformer": "^0.2.0",
+    "gulp-pug": "^3.0.3",
+    "gulp-pug2": "^0.0.1",
+    "gulp-server-livereload": "^1.8.1",
+    "nodemailer": "^2.4.2"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "multer": "^1.1.0"
+  }
+}

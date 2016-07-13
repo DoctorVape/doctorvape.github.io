@@ -9,5 +9,6 @@
     ".DS_Store": "explorerExcludedFiles",
     "Dockerfile": "explorerExcludedFiles",
     "docker-compose.yml": "explorerExcludedFiles"
-  }
+  },
+  "editor.renderIndentGuides": true
 }

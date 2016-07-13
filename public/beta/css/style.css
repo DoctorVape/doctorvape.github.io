@@ -392,8 +392,12 @@ position:  relative;
   width: 150px;
 }
 @media screen and (max-width: 1000px) {
- #fh5co-header .logo{
+ /*#fh5co-header .logo{
     display: none;
+  }*/
+  .nav-links{
+    font-size: 11pt!important;
+    color: pink;
   }
 
 }
