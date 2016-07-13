@@ -1,3 +1,13 @@
 {
-    "puglint.enable": true
+  "puglint.enable": true,
+  "files.exclude": {
+    "node_modules": "explorerExcludedFiles",
+    "npm-debug.log": "explorerExcludedFiles",
+    "bundle": "explorerExcludedFiles",
+    "*.env": "explorerExcludedFiles",
+    "*.dev": "explorerExcludedFiles",
+    ".DS_Store": "explorerExcludedFiles",
+    "Dockerfile": "explorerExcludedFiles",
+    "docker-compose.yml": "explorerExcludedFiles"
+  }
 }

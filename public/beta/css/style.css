@@ -358,13 +358,51 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 38px 0 0 0;
 }
 #fh5co-header nav {
-  text-align: center;
+  float: right;
   padding: 0;
 }
-@media screen and (max-width: 768px) {
-  #fh5co-header nav {
+.logo img{
+  width:  140px;
+}
+#fh5co-header .logo{
+position: absolute;
+left: 20px;
+top: 6px;
+}
+#fh5co-header .header-inner{
+position:  relative;
+}
+
+/*logo*/
+
+#fh5co-why-us{
+  position: relative;
+}
+
+#fh5co-why-us .dragon-logo{
+  position: absolute;
+  right: 20px;
+  top: -150px;
+  border-radius: 5px;
+  padding: 2px;
+
+
+}
+.dragon-logo img{
+  width: 150px;
+}
+@media screen and (max-width: 1000px) {
+ #fh5co-header .logo{
     display: none;
   }
+
+}
+/**/
+@media screen and (max-width: 768px) {
+  #fh5co-header nav,#fh5co-header logo  {
+    display: none;
+  }
+
 }
 #fh5co-header nav ul {
   padding: 0;
@@ -1292,4 +1330,8 @@ input[id="btn-submit form-submit"].btn.btn-send-message.btn-md {
 }
 .fl-div {
   text-align: center;
+}
+
+#fh5co-hero .flexslider{
+  z-index: 0;
 }
