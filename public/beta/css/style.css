@@ -1396,15 +1396,34 @@ a.categ-btn.chosen {
   height: 200px;
   object-fit: cover;
 }
-a.product-item {
-  margin: 20px;
-  text-decoration: none;
-    
+
+#black-back {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  height: 100%;
+  width: 100%;
 }
-p.center{
+#dialog-wrapper {
+  /*display: flex;*/
+}
+#dialog {
+  position: fixed;
+  z-index: 11;
+  height: 500px;
+  width: 700px;
+  background: white;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px; 
+  margin-left: -350px; 
+  padding: 20px;
+}
+img.product {
+  width:350px;
+  box-shadow: 2px 3px 5px rgba(0,0,0,0.3);
+}
+h3.product-name {
+  /*float: right;*/
   text-align: center;
-  color: black;
-}
-.small-text {
-  font-size: 10px;
 }
