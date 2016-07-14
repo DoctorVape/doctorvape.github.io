@@ -3,6 +3,7 @@ html(lang="en")
   head
     // Animate.css
     link(rel='stylesheet', href='css/animate.css')
+    meta(name="viewport",content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
     // Icomoon Icon Fonts
     link(rel='stylesheet', href='css/icomoon.css')
     // Bootstrap
@@ -11,6 +12,8 @@ html(lang="en")
     link(rel='stylesheet', href='css/flexslider.css')
     // Owl Carousel
     link(rel='stylesheet', href='css/owl.carousel.min.css')
+    link(rel='stylesheet', href='css/custom-styles.css')
+
     link(rel='stylesheet', href='css/owl.theme.default.min.css')
     // Theme style
     link(rel='stylesheet', href='css/style.css')
@@ -23,11 +26,20 @@ html(lang="en")
     script(src='js/jquery.min.js')
 
   body
-    #black-back
-    #dialog
+    #black-back.animated.fadeIn(onClick="closeDialog()")
+    #dialog.animated.fadeInDown
+      img(src="images/icons/close.svg" onClick="closeDialog()").sm-cl
       h3.product-name Vaporizer Device Ultra 4000
       hr
-      img(src="images/good1.jpg").product
+      .flex-row
+        .col-50.pad-20
+          img(src="images/good1.jpg").product
+        .col-50.pad-20
+          p Характеристика 1
+          p Характеристика 2
+          p Никотин: 3мл/6мл/9мл
+      .flex-row.close-container
+        img(src="images/icons/close.svg" onClick="closeDialog()").big-cl
     #fh5co-page
       header#fh5co-header(role='banner')
         .fl-div
@@ -54,24 +66,27 @@ html(lang="en")
         a.categ-btn(href="#") RDA 
         a.categ-btn.chosen(href="#") Жидкости 
         a.categ-btn(href="#") Аккумуляторы 
+        a.categ-btn(href="#") RDA 
+        a.categ-btn.chosen(href="#") Жидкости 
+        a.categ-btn(href="#") Аккумуляторы 
         
       #fh5co-work-section
         .col-md-4.animate-box
-          a.item-grid.text-center(href='#')
+          a.item-grid.text-center(href='#' onClick="openDialog()")
             .image(style='background-image: url(images/good1.jpg)')
             .v-align
               .v-align-middle
                 h3.title GeekVape Tsunami 24 RDA
                 h5.category Стальной/белый/синий
         .col-md-4.animate-box
-          a.item-grid.text-center(href='#')
+          a.item-grid.text-center(href='#' onClick="openDialog()")
             .image(style='background-image: url(images/good2.jpg)')
             .v-align
               .v-align-middle
                 h3.title Petri v2.0
                 h5.category Красный/белый
         .col-md-4.animate-box
-          a.item-grid.text-center(href='#')
+          a.item-grid.text-center(href='#' onClick="openDialog()")
             .image(style='background-image: url(images/good3.jpg)')
             .v-align
               .v-align-middle
@@ -104,6 +119,24 @@ html(lang="en")
           $(this).addClass("chosen");
         });
 
+        function closeDialog(){
+          $("#dialog").removeClass("fadeInDown");
+          $("#dialog").addClass("fadeOutDown");
+          $("#black-back").removeClass("fadeIn");
+          $("#black-back").addClass("fadeOut");
+          setTimeout(function(){
+            $("#black-back").css("z-index",-10);
+            $("#dialog").css("z-index",-10); 
+          }, 600);                   
+        }
+        function openDialog(){
+          $("#black-back").css("z-index",10);
+          $("#dialog").css("z-index",11); 
+          $("#dialog").addClass("fadeInDown");
+          $("#dialog").removeClass("fadeOutDown");
+          $("#black-back").addClass("fadeIn");
+          $("#black-back").removeClass("fadeOut");
+        }
 
   //
 

@@ -3,6 +3,7 @@
   <head>
     <!-- Animate.css-->
     <link rel="stylesheet" href="css/animate.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Icomoon Icon Fonts-->
     <link rel="stylesheet" href="css/icomoon.css">
     <!-- Bootstrap-->
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="css/flexslider.css">
     <!-- Owl Carousel-->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- Theme style-->
     <link rel="stylesheet" href="css/style.css">
@@ -23,10 +25,19 @@
     <script src="js/jquery.min.js"></script>
   </head>
   <body>
-    <div id="black-back"></div>
-    <div id="dialog">
+    <div class="animated fadeIn" id="black-back" onClick="closeDialog()"></div>
+    <div class="animated fadeInDown" id="dialog"><img class="sm-cl" src="images/icons/close.svg" onClick="closeDialog()">
       <h3 class="product-name">Vaporizer Device Ultra 4000</h3>
-      <hr><img class="product" src="images/good1.jpg">
+      <hr>
+      <div class="flex-row">
+        <div class="col-50 pad-20"><img class="product" src="images/good1.jpg"></div>
+        <div class="col-50 pad-20">
+          <p>Характеристика 1</p>
+          <p>Характеристика 2</p>
+          <p>Никотин: 3мл/6мл/9мл</p>
+        </div>
+      </div>
+      <div class="flex-row close-container"><img class="big-cl" src="images/icons/close.svg" onClick="closeDialog()"></div>
     </div>
     <div id="fh5co-page">
       <header id="fh5co-header" role="banner">
@@ -51,9 +62,9 @@
           <p class="banner-text">Vaporizer Devices. The most useful overview to the best vaporizer devices. Explore our full range of mechanical mods with variable voltage or batteries.</p>
         </div>
       </section>
-      <section id="categories-buttons"><a class="categ-btn" href="#">RDA </a><a class="categ-btn chosen" href="#">Жидкости </a><a class="categ-btn" href="#">Аккумуляторы </a></section>
+      <section id="categories-buttons"><a class="categ-btn" href="#">RDA </a><a class="categ-btn chosen" href="#">Жидкости </a><a class="categ-btn" href="#">Аккумуляторы </a><a class="categ-btn" href="#">RDA </a><a class="categ-btn chosen" href="#">Жидкости </a><a class="categ-btn" href="#">Аккумуляторы </a></section>
       <div id="fh5co-work-section">
-        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#">
+        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
             <div class="image" style="background-image: url(images/good1.jpg)"></div>
             <div class="v-align">
               <div class="v-align-middle">
@@ -61,7 +72,7 @@
                 <h5 class="category">Стальной/белый/синий</h5>
               </div>
             </div></a></div>
-        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#">
+        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
             <div class="image" style="background-image: url(images/good2.jpg)"></div>
             <div class="v-align">
               <div class="v-align-middle">
@@ -69,7 +80,7 @@
                 <h5 class="category">Красный/белый</h5>
               </div>
             </div></a></div>
-        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#">
+        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
             <div class="image" style="background-image: url(images/good3.jpg)"></div>
             <div class="v-align">
               <div class="v-align-middle">
@@ -108,6 +119,24 @@
           $(this).addClass("chosen");
         });
         
+        function closeDialog(){
+          $("#dialog").removeClass("fadeInDown");
+          $("#dialog").addClass("fadeOutDown");
+          $("#black-back").removeClass("fadeIn");
+          $("#black-back").addClass("fadeOut");
+          setTimeout(function(){
+            $("#black-back").css("z-index",-10);
+            $("#dialog").css("z-index",-10); 
+          }, 600);                   
+        }
+        function openDialog(){
+          $("#black-back").css("z-index",10);
+          $("#dialog").css("z-index",11); 
+          $("#dialog").addClass("fadeInDown");
+          $("#dialog").removeClass("fadeOutDown");
+          $("#black-back").addClass("fadeIn");
+          $("#black-back").removeClass("fadeOut");
+        }
         
       </script>
     </div>
