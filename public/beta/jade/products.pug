@@ -1,10 +1,17 @@
 doctype html
 html(lang="en")
   head
+    // Animate.css
+    link(rel='stylesheet', href='css/animate.css')
     // Icomoon Icon Fonts
     link(rel='stylesheet', href='css/icomoon.css')
     // Bootstrap
     link(rel='stylesheet', href='css/bootstrap.css')
+    // Flexslider
+    link(rel='stylesheet', href='css/flexslider.css')
+    // Owl Carousel
+    link(rel='stylesheet', href='css/owl.carousel.min.css')
+    link(rel='stylesheet', href='css/owl.theme.default.min.css')
     // Theme style
     link(rel='stylesheet', href='css/style.css')
     // Modernizr JS
@@ -12,6 +19,93 @@ html(lang="en")
     // FOR IE9 below
     //if lt IE 9
       script(src='js/respond.min.js')
+
   body
-    h1
-    
+    #fh5co-page
+      header#fh5co-header(role='banner')
+        .fl-div
+        .container
+          .header-inner
+            .logo
+              img(src='images/logo2.png')
+            nav(role='navigation')
+              ul
+                li
+                  a.nav-links(href='#fh5co-why-us') Наши преимущества
+                li
+                  a.nav-links(href='#fh5co-work-section') Последние поступления
+                li
+                  a.nav-links(href='#fh5co-section-with-image') О нас
+                li
+                  a.nav-links(href='#fh5co-maps-section') Контакты
+
+      section#banner
+        .pic-layer
+        .black-layer
+          p.banner-text Vaporizer Devices. The most useful overview to the best vaporizer devices. Explore our full range of mechanical mods with variable voltage or batteries.
+      section#categories-buttons
+        a.categ-btn(href="#") RDA 
+        a.categ-btn.chosen(href="#") Жидкости 
+        a.categ-btn(href="#") Аккумуляторы 
+        
+      #fh5co-work-section
+        .col-md-4.animate-box
+          a.item-grid.text-center(href='#')
+            .image(style='background-image: url(images/good1.jpg)')
+            .v-align
+              .v-align-middle
+                h3.title GeekVape Tsunami 24 RDA
+                h5.category Стальной/белый/синий
+        .col-md-4.animate-box
+          a.item-grid.text-center(href='#')
+            .image(style='background-image: url(images/good2.jpg)')
+            .v-align
+              .v-align-middle
+                h3.title Petri v2.0
+                h5.category Красный/белый
+        .col-md-4.animate-box
+          a.item-grid.text-center(href='#')
+            .image(style='background-image: url(images/good3.jpg)')
+            .v-align
+              .v-align-middle
+                h3.title El Cabron RDA
+                h5.category Стальной. Черный/красный/белый
+        .col-md-4.animate-box
+          a.item-grid.text-center(href='#')
+            .image(style='background-image: url(images/good4.jpg)')
+            .v-align
+              .v-align-middle
+                h3.title Wotofo Sapor RDA
+                h5.category Матовый черный
+        .col-md-4.animate-box
+          a.item-grid.text-center(href='#')
+            .image(style='background-image: url(images/good5.jpg)')
+            .v-align
+              .v-align-middle
+                h3.title  Mad Hatter
+                h5.category Черный/экслюзивный красный
+        .col-md-4.animate-box
+          a.item-grid.text-center(href='#')
+            .image(style='background-image: url(images/good6.jpg)')
+            .v-align
+              .v-align-middle
+                h3.title Tobh Atty v2
+                h5.category Кофейный/бежевый
+
+
+  //
+  // jQuery
+  script(src='js/jquery.min.js')
+  // jQuery Easing
+  script(src='js/jquery.easing.1.3.js')
+  // Bootstrap
+  script(src='js/bootstrap.min.js')
+  // Waypoints
+  script(src='js/jquery.waypoints.min.js')
+  // Owl Carousel
+  script(src='js/owl.carousel.min.js')
+  // Flexslider
+  script(src='js/jquery.flexslider-min.js')
+  // MAIN JS
+  script(src='js/main.js')
+
