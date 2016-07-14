@@ -118,20 +118,27 @@ html(lang="en")
           $(".categ-btn").removeClass("chosen");
           $(this).addClass("chosen");
         });
+        $(document).keyup(function(e) {
+            if (e.keyCode == 27) { 
+              closeDialog();
+            }
+        });
 
         function closeDialog(){
-          $("#dialog").removeClass("fadeInDown");
-          $("#dialog").addClass("fadeOutDown");
-          $("#black-back").removeClass("fadeIn");
-          $("#black-back").addClass("fadeOut");
-          setTimeout(function(){
-            $("#black-back").css("z-index",-10);
-            $("#dialog").css("z-index",-10); 
-          }, 600);                   
+          if($("#dialog").hasClass("fadeInDown")) {    
+              $("#dialog").removeClass("fadeInDown");
+              $("#dialog").addClass("fadeOutDown");
+              $("#black-back").removeClass("fadeIn");
+              $("#black-back").addClass("fadeOut");
+              setTimeout(function(){
+                $("#black-back").css("z-index",-10);
+                $("#dialog").css("z-index",-10); 
+              }, 600);       
+          }            
         }
         function openDialog(){
-          $("#black-back").css("z-index",10);
-          $("#dialog").css("z-index",11); 
+          $("#black-back").css("z-index",10000);
+          $("#dialog").css("z-index",10001); 
           $("#dialog").addClass("fadeInDown");
           $("#dialog").removeClass("fadeOutDown");
           $("#black-back").addClass("fadeIn");
