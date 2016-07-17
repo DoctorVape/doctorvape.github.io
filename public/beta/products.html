@@ -27,14 +27,12 @@
   <body>
     <div class="animated fadeIn" id="black-back" onClick="closeDialog()"></div>
     <div class="animated fadeInDown" id="dialog"><img class="sm-cl" src="images/icons/close.svg" onClick="closeDialog()">
-      <h3 class="product-name">Vaporizer Device Ultra 4000</h3>
+      <h3 class="product-name" id="dialog-name">Vaporizer Device Ultra 4000</h3>
       <hr>
       <div class="flex-row">
-        <div class="col-50 pad-20"><img class="product" src="images/good1.jpg"></div>
+        <div class="col-50 pad-20"><img class="product" id="dialog-img" src="images/good1.jpg"></div>
         <div class="col-50 pad-20">
-          <p>Характеристика 1</p>
-          <p>Характеристика 2</p>
-          <p>Никотин: 3мл/6мл/9мл</p>
+          <p id="dialog-description"></p>
         </div>
       </div>
       <div class="flex-row close-container"><img class="big-cl" src="images/icons/close.svg" onClick="closeDialog()"></div>
@@ -72,58 +70,75 @@
       </ul>
       <div class="tab-content" id="fh5co-work-section">
         <div class="tab-pane active" id="data1" role="tabpanel">
-          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
-              <div class="image" style="background-image: url(images/good2.jpg)"></div>
+          <div class="col-md-4 animate-box">
+            <div class="item-grid text-center" href="#" onClick="openDialog(1)">
+              <div class="image" style="background-image: url(images/good3.jpg)"></div>
               <div class="v-align">
                 <div class="v-align-middle">
                   <h3 class="title">Petri v2.0</h3>
                   <h5 class="category">Красный/белый</h5>
                 </div>
-              </div></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animate-box">
+            <div class="item-grid text-center" href="#" onClick="openDialog(1)">
+              <div class="image" style="background-image: url(images/good3.jpg)"></div>
+              <div class="v-align">
+                <div class="v-align-middle">
+                  <h3 class="title">Petri v2.0</h3>
+                  <h5 class="category">Красный/белый</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animate-box">
+            <div class="item-grid text-center" href="#" onClick="openDialog(1)">
+              <div class="image" style="background-image: url(images/good3.jpg)"></div>
+              <div class="v-align">
+                <div class="v-align-middle">
+                  <h3 class="title">Petri v2.0</h3>
+                  <h5 class="category">Красный/белый</h5>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="tab-pane" id="data2" role="tabpanel">
-          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
-              <div class="image" style="background-image: url(images/good2.jpg)"></div>
-              <div class="v-align">
-                <div class="v-align-middle">
-                  <h3 class="title">Petri v2.0</h3>
-                  <h5 class="category">Красный/белый</h5>
-                </div>
-              </div></a></div>
-          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
-              <div class="image" style="background-image: url(images/good2.jpg)"></div>
-              <div class="v-align">
-                <div class="v-align-middle">
-                  <h3 class="title">Petri v2.0</h3>
-                  <h5 class="category">Красный/белый</h5>
-                </div>
-              </div></a></div>
-        </div>
+        <div class="tab-pane" id="data2" role="tabpanel"></div>
         <div class="tab-pane" id="data3" role="tabpanel">
-          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
-              <div class="image" style="background-image: url(images/good2.jpg)"></div>
+          <div class="col-md-4 animate-box">
+            <div class="item-grid text-center" href="#" onClick="openDialog(1)">
+              <div class="image" style="background-image: url(images/good3.jpg)"></div>
               <div class="v-align">
                 <div class="v-align-middle">
                   <h3 class="title">Petri v2.0</h3>
                   <h5 class="category">Красный/белый</h5>
                 </div>
-              </div></a></div>
-          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
-              <div class="image" style="background-image: url(images/good2.jpg)"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animate-box">
+            <div class="item-grid text-center" href="#" onClick="openDialog(1)">
+              <div class="image" style="background-image: url(images/good3.jpg)"></div>
               <div class="v-align">
                 <div class="v-align-middle">
                   <h3 class="title">Petri v2.0</h3>
                   <h5 class="category">Красный/белый</h5>
                 </div>
-              </div></a></div>
-          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
-              <div class="image" style="background-image: url(images/good2.jpg)"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 animate-box">
+            <div class="item-grid text-center" href="#" onClick="openDialog(1)">
+              <div class="image" style="background-image: url(images/good3.jpg)"></div>
               <div class="v-align">
                 <div class="v-align-middle">
                   <h3 class="title">Petri v2.0</h3>
                   <h5 class="category">Красный/белый</h5>
                 </div>
-              </div></a></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <script>
@@ -149,19 +164,29 @@
               }, 600);       
           }            
         }
-        function openDialog(){
+        function openDialog(id){
+          getProductFromDB(id);
           $("#black-back").css("z-index",10000);
-          $("#dialog").css("z-index",10001); 
+          $("#dialog").css("z-index",10001);
           $("#dialog").addClass("fadeInDown");
           $("#dialog").removeClass("fadeOutDown");
           $("#black-back").addClass("fadeIn");
           $("#black-back").removeClass("fadeOut");
         }
+        function getProductFromDB(id) {
+            $.getJSON( "http://localhost:9000/api/items/"+id, function( data ) {
+              console.log(data);
+              $("#dialog-description").html(data.description);
+              $("#dialog-img").html(data.img);
+              $("#dialog-name").html(data.name);
+            });
+        
+        }
+        
         
       </script>
     </div>
   </body>
-  <!---->
   <!-- jQuery Easing-->
   <script src="js/jquery.easing.1.3.js"></script>
   <!-- Bootstrap-->
