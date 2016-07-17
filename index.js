@@ -1,6 +1,13 @@
 var express = require('express');
 var app = express();
 var mailler = require('nodemailer');
+var low = require('lowdb');
+const db= low('db.json');
+
+
+console.log(db.get('items').find({"id":1}).value());
+
+
 
 
 app.use(express.static('public'));
@@ -8,6 +15,10 @@ app.use(express.static('public'));
 app.set('port', (process.env.PORT || 9000));
 app.get('/', function (req, res) {
   res.sendFile(__dirname + "/public/index.html")
+});
+
+app.get('/api/:category/:itemId',function(req,res){
+     res.send(db.get(req.params.category).find({id:parseInt(req.params.itemId)}).value());
 });
 
 app.post("/subscribe", function (req, res) {
