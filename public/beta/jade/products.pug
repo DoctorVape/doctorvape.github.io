@@ -147,7 +147,7 @@ html(lang="en")
           $("#black-back").removeClass("fadeOut");
         }
         function getProductFromDB(id) {
-            $.getJSON( "http://doctorvape.com.ua//api/items/"+id, function( data ) {
+            $.getJSON( "http://doctorvape.com.ua/api/items/"+id, function( data ) {
               $("#dialog-description").html(data.description);
               $("#dialog-img").html(data.img);
               $("#dialog-name").html(data.name);
