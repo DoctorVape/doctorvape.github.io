@@ -19,6 +19,7 @@ app.get('/', function (req, res) {
   res.sendFile(__dirname + "/public/beta/index.html")
 });
 app.get('/products',function(req,res){
+  console.log("kek")
    res.sendFile(___dirname+"/public/beta/products.html")
 })
 
