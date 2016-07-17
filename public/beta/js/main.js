@@ -11,13 +11,6 @@ $(document).ready(function () {
 		}, 1500);
 	});
 
-$(".categ-btn").hover(function(){
-	$(this).addClass("chosen");
-}).mouseleave(function(){
-	$(this).removeClass("chosen");
-}).mouseover(function(){
-	$(this).removeClass("chosen");
-})
 
 	$("#scrollTop").click(function () {
 		$('html, body').animate({ scrollTop: 0 }, 1500);

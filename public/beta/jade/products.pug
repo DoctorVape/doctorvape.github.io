@@ -1,3 +1,13 @@
+mixin createItem()
+    .col-md-4.animate-box
+          a.item-grid.text-center(href='#' onClick="openDialog()")
+            .image(style='background-image: url(images/good2.jpg)')
+            .v-align
+              .v-align-middle
+                h3.title Petri v2.0
+                h5.category Красный/белый
+
+
 doctype html
 html(lang="en")
   head
@@ -12,7 +22,6 @@ html(lang="en")
     link(rel='stylesheet', href='css/flexslider.css')
     // Owl Carousel
     link(rel='stylesheet', href='css/owl.carousel.min.css')
-    link(rel='stylesheet', href='css/custom-styles.css')
 
     link(rel='stylesheet', href='css/owl.theme.default.min.css')
     // Theme style
@@ -24,6 +33,8 @@ html(lang="en")
       script(src='js/respond.min.js')
     // jQuery
     script(src='js/jquery.min.js')
+    link(rel='stylesheet', href='css/custom-styles.css')
+
 
   body
     #black-back.animated.fadeIn(onClick="closeDialog()")
@@ -62,57 +73,37 @@ html(lang="en")
         .pic-layer
         .black-layer
           p.banner-text Vaporizer Devices. The most useful overview to the best vaporizer devices. Explore our full range of mechanical mods with variable voltage or batteries.
-      section#categories-buttons
-        a.categ-btn(href="#") RDA 
-        a.categ-btn.chosen(href="#") Жидкости 
-        a.categ-btn(href="#") Аккумуляторы 
-        a.categ-btn(href="#") RDA 
-        a.categ-btn.chosen(href="#") Жидкости 
-        a.categ-btn(href="#") Аккумуляторы 
+      ul.section#categories-buttons.nav
+        li.table-50.mob-100.lap-10
+         a.categ-btn(href="#data1",role="tab",data-toggle="tab") RDA 
+          
+        li.table-50.mob-100.lap-10
+         a.categ-btn(href="#data2",data-toggle="tab") Жидкости 
+          
+        li.table-50.mob-100.lap-10
+          a.categ-btn(href="#data3",data-toggle="tab") Аккумуляторы 
+          
+        li.table-50.mob-100.lap-10
+          a.categ-btn(href="#data4",data-toggle="tab") RDA 
+          
+        li.table-50.mob-100.lap-10
+          a.categ-btn(href="#data5",data-toggle="tab") Жидкости 
+            
+        li.table-50.mob-100.lap-10
+          a.categ-btn(href="#data6",data-toggle="tab") Аккумуляторы 
+
         
-      #fh5co-work-section
-        .col-md-4.animate-box
-          a.item-grid.text-center(href='#' onClick="openDialog()")
-            .image(style='background-image: url(images/good1.jpg)')
-            .v-align
-              .v-align-middle
-                h3.title GeekVape Tsunami 24 RDA
-                h5.category Стальной/белый/синий
-        .col-md-4.animate-box
-          a.item-grid.text-center(href='#' onClick="openDialog()")
-            .image(style='background-image: url(images/good2.jpg)')
-            .v-align
-              .v-align-middle
-                h3.title Petri v2.0
-                h5.category Красный/белый
-        .col-md-4.animate-box
-          a.item-grid.text-center(href='#' onClick="openDialog()")
-            .image(style='background-image: url(images/good3.jpg)')
-            .v-align
-              .v-align-middle
-                h3.title El Cabron RDA
-                h5.category Стальной. Черный/красный/белый
-        .col-md-4.animate-box
-          a.item-grid.text-center(href='#')
-            .image(style='background-image: url(images/good4.jpg)')
-            .v-align
-              .v-align-middle
-                h3.title Wotofo Sapor RDA
-                h5.category Матовый черный
-        .col-md-4.animate-box
-          a.item-grid.text-center(href='#')
-            .image(style='background-image: url(images/good5.jpg)')
-            .v-align
-              .v-align-middle
-                h3.title  Mad Hatter
-                h5.category Черный/экслюзивный красный
-        .col-md-4.animate-box
-          a.item-grid.text-center(href='#')
-            .image(style='background-image: url(images/good6.jpg)')
-            .v-align
-              .v-align-middle
-                h3.title Tobh Atty v2
-                h5.category Кофейный/бежевый
+
+      #fh5co-work-section.tab-content
+        .tab-pane.active#data1(role="tabpanel")
+          +createItem()
+        .tab-pane#data2(role="tabpanel")
+          +createItem()
+          +createItem()
+        .tab-pane#data3(role="tabpanel")
+          +createItem()
+          +createItem()
+          +createItem()
       script.
         $(".categ-btn").bind("click", function(){
           $(".categ-btn").removeClass("chosen");

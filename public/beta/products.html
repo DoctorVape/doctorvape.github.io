@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/flexslider.css">
     <!-- Owl Carousel-->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/custom-styles.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- Theme style-->
     <link rel="stylesheet" href="css/style.css">
@@ -23,6 +22,7 @@
     -->
     <!-- jQuery-->
     <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/custom-styles.css">
   </head>
   <body>
     <div class="animated fadeIn" id="black-back" onClick="closeDialog()"></div>
@@ -62,56 +62,69 @@
           <p class="banner-text">Vaporizer Devices. The most useful overview to the best vaporizer devices. Explore our full range of mechanical mods with variable voltage or batteries.</p>
         </div>
       </section>
-      <section id="categories-buttons"><a class="categ-btn" href="#">RDA </a><a class="categ-btn chosen" href="#">Жидкости </a><a class="categ-btn" href="#">Аккумуляторы </a><a class="categ-btn" href="#">RDA </a><a class="categ-btn chosen" href="#">Жидкости </a><a class="categ-btn" href="#">Аккумуляторы </a></section>
-      <div id="fh5co-work-section">
-        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
-            <div class="image" style="background-image: url(images/good1.jpg)"></div>
-            <div class="v-align">
-              <div class="v-align-middle">
-                <h3 class="title">GeekVape Tsunami 24 RDA</h3>
-                <h5 class="category">Стальной/белый/синий</h5>
-              </div>
-            </div></a></div>
-        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
-            <div class="image" style="background-image: url(images/good2.jpg)"></div>
-            <div class="v-align">
-              <div class="v-align-middle">
-                <h3 class="title">Petri v2.0</h3>
-                <h5 class="category">Красный/белый</h5>
-              </div>
-            </div></a></div>
-        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
-            <div class="image" style="background-image: url(images/good3.jpg)"></div>
-            <div class="v-align">
-              <div class="v-align-middle">
-                <h3 class="title">El Cabron RDA</h3>
-                <h5 class="category">Стальной. Черный/красный/белый</h5>
-              </div>
-            </div></a></div>
-        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#">
-            <div class="image" style="background-image: url(images/good4.jpg)"></div>
-            <div class="v-align">
-              <div class="v-align-middle">
-                <h3 class="title">Wotofo Sapor RDA</h3>
-                <h5 class="category">Матовый черный</h5>
-              </div>
-            </div></a></div>
-        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#">
-            <div class="image" style="background-image: url(images/good5.jpg)"></div>
-            <div class="v-align">
-              <div class="v-align-middle">
-                <h3 class="title"> Mad Hatter</h3>
-                <h5 class="category">Черный/экслюзивный красный</h5>
-              </div>
-            </div></a></div>
-        <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#">
-            <div class="image" style="background-image: url(images/good6.jpg)"></div>
-            <div class="v-align">
-              <div class="v-align-middle">
-                <h3 class="title">Tobh Atty v2</h3>
-                <h5 class="category">Кофейный/бежевый</h5>
-              </div>
-            </div></a></div>
+      <ul class="section nav" id="categories-buttons">
+        <li class="table-50 mob-100 lap-10"><a class="categ-btn" href="#data1" role="tab" data-toggle="tab">RDA </a></li>
+        <li class="table-50 mob-100 lap-10"><a class="categ-btn" href="#data2" data-toggle="tab">Жидкости </a></li>
+        <li class="table-50 mob-100 lap-10"><a class="categ-btn" href="#data3" data-toggle="tab">Аккумуляторы </a></li>
+        <li class="table-50 mob-100 lap-10"><a class="categ-btn" href="#data4" data-toggle="tab">RDA </a></li>
+        <li class="table-50 mob-100 lap-10"><a class="categ-btn" href="#data5" data-toggle="tab">Жидкости </a></li>
+        <li class="table-50 mob-100 lap-10"><a class="categ-btn" href="#data6" data-toggle="tab">Аккумуляторы </a></li>
+      </ul>
+      <div class="tab-content" id="fh5co-work-section">
+        <div class="tab-pane active" id="data1" role="tabpanel">
+          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
+              <div class="image" style="background-image: url(images/good2.jpg)"></div>
+              <div class="v-align">
+                <div class="v-align-middle">
+                  <h3 class="title">Petri v2.0</h3>
+                  <h5 class="category">Красный/белый</h5>
+                </div>
+              </div></a></div>
+        </div>
+        <div class="tab-pane" id="data2" role="tabpanel">
+          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
+              <div class="image" style="background-image: url(images/good2.jpg)"></div>
+              <div class="v-align">
+                <div class="v-align-middle">
+                  <h3 class="title">Petri v2.0</h3>
+                  <h5 class="category">Красный/белый</h5>
+                </div>
+              </div></a></div>
+          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
+              <div class="image" style="background-image: url(images/good2.jpg)"></div>
+              <div class="v-align">
+                <div class="v-align-middle">
+                  <h3 class="title">Petri v2.0</h3>
+                  <h5 class="category">Красный/белый</h5>
+                </div>
+              </div></a></div>
+        </div>
+        <div class="tab-pane" id="data3" role="tabpanel">
+          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
+              <div class="image" style="background-image: url(images/good2.jpg)"></div>
+              <div class="v-align">
+                <div class="v-align-middle">
+                  <h3 class="title">Petri v2.0</h3>
+                  <h5 class="category">Красный/белый</h5>
+                </div>
+              </div></a></div>
+          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
+              <div class="image" style="background-image: url(images/good2.jpg)"></div>
+              <div class="v-align">
+                <div class="v-align-middle">
+                  <h3 class="title">Petri v2.0</h3>
+                  <h5 class="category">Красный/белый</h5>
+                </div>
+              </div></a></div>
+          <div class="col-md-4 animate-box"><a class="item-grid text-center" href="#" onClick="openDialog()">
+              <div class="image" style="background-image: url(images/good2.jpg)"></div>
+              <div class="v-align">
+                <div class="v-align-middle">
+                  <h3 class="title">Petri v2.0</h3>
+                  <h5 class="category">Красный/белый</h5>
+                </div>
+              </div></a></div>
+        </div>
       </div>
       <script>
         $(".categ-btn").bind("click", function(){

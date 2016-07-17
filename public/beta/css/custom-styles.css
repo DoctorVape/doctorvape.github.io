@@ -51,27 +51,27 @@
 a.categ-btn {
     text-decoration: none;
     color: dimgray;
-    flex: 1 0 10%;
     text-align: center;
     padding: 10px;
 }
-
-a.categ-btn.chosen {
-    color: rgb(152, 76, 149);
+.active>a{
     border-bottom: 2px solid rgb(152, 76, 149);
-    ;
+    color: rgb(152, 76, 149);
+    font-weight: 500;   
+}
+.lap-10{
+    flex:  1 0 10%;
 }
 @media (max-width: 908px) {
-    a.categ-btn {
-        flex: 1 0 50%;
-        min-width: 100px;
+    .table-50 {
+        flex-basis: 50%;
     }
     #categories-buttons{
         flex-wrap: wrap;
     }
 }
 @media (max-width: 470px) {
-    a.categ-btn {
+   .mob-100  {
         flex: 1 0 100%;
         min-width: 100px;
     }
@@ -131,3 +131,4 @@ h3.product-name {
     margin-top: 10px;
     height: 40px;
 }
+
