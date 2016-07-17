@@ -382,7 +382,7 @@ position:  relative;
 #fh5co-why-us .dragon-logo{
   position: absolute;
   right: 20px;
-  top: -150px;
+  top: -240px;
   border-radius: 5px;
   padding: 2px;
 }
@@ -1334,5 +1334,11 @@ input[id="btn-submit form-submit"].btn.btn-send-message.btn-md {
 
 #fh5co-hero .flexslider{
   z-index: 0;
+}
+.flex{
+  display: flex;
+}
+.flex-end{
+  justify-content: flex-end;
 }
 

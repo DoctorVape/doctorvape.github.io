@@ -12,15 +12,15 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json()); // for parsing application/json
 //app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
-app.use(express.static('public'));
+app.use(express.static('public/beta'));
 
 app.set('port', (process.env.PORT || 9000));
 app.get('/', function (req, res) {
   res.sendFile(__dirname + "/public/beta/index.html")
 });
 app.get('/products',function(req,res){
-  console.log("kek")
-   res.sendFile(___dirname+"/public/beta/products.html")
+  console.log()
+   res.sendFile(__dirname+"/public/beta/products.html")
 })
 
 app.get('/api/:category/:itemId',function(req,res){
