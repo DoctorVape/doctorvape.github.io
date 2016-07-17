@@ -16,12 +16,16 @@ app.use(express.static('public'));
 
 app.set('port', (process.env.PORT || 9000));
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + "/public/index.html")
+  res.sendFile(__dirname + "/public/beta/index.html")
 });
+app.get('/products',function(req,res){
+   res.sendFile(___dirname+"/public/beta/products.html")
+})
 
 app.get('/api/:category/:itemId',function(req,res){
      res.send(db.get(req.params.category).find({id:parseInt(req.params.itemId)}).value());
 });
+
 
 app.post("/subscribe", function (req, res) {
   var subscribermail = req.query.mail
