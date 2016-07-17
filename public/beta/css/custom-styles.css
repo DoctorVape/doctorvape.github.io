@@ -132,3 +132,8 @@ h3.product-name {
     height: 40px;
 }
 
+/*use it for pop-up close icon*/
+.cursor-hand{
+    cursor: pointer;
+}
+

@@ -26,7 +26,7 @@
   </head>
   <body>
     <div class="animated fadeIn" id="black-back" onClick="closeDialog()"></div>
-    <div class="animated fadeInDown" id="dialog"><img class="sm-cl" src="images/icons/close.svg" onClick="closeDialog()">
+    <div class="animated fadeInDown" id="dialog"><img class="sm-cl hidden-sm hidden-xs cursor-hand" src="images/icons/close.svg" onClick="closeDialog()">
       <h3 class="product-name">Vaporizer Device Ultra 4000</h3>
       <hr>
       <div class="flex-row">
@@ -37,7 +37,7 @@
           <p>Никотин: 3мл/6мл/9мл</p>
         </div>
       </div>
-      <div class="flex-row close-container"><img class="big-cl" src="images/icons/close.svg" onClick="closeDialog()"></div>
+      <div class="flex-row close-container hidden-lg hidden-md cursor-hand"><img class="big-cl" src="images/icons/close.svg" onClick="closeDialog()"></div>
     </div>
     <div id="fh5co-page">
       <header id="fh5co-header" role="banner">
@@ -145,7 +145,7 @@
               $("#black-back").addClass("fadeOut");
               setTimeout(function(){
                 $("#black-back").css("z-index",-10);
-                $("#dialog").css("z-index",-10); 
+            $("#dialog").css("z-index",-10); 
               }, 600);       
           }            
         }
