@@ -1,8 +1,10 @@
 {
     "items":[{
         "id":1, 
-        "num":2
-
+        "name": "Product name",
+        "img": "images/good3.jpg",
+        "description": "Small description small description",
+        "option1": "Никотин 3мл/6мл/9мл"
     }]
        
 }
