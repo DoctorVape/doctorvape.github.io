@@ -3,12 +3,14 @@ var app = express();
 var mailler = require('nodemailer');
 var low = require('lowdb');
 const db= low('db.json');
+var bodyParser = require('body-parser');
 
 
-console.log(db.get('items').find({"id":1}).value());
+//var multer = require('multer'); // v1.0.5
+//var upload = multer(); // for parsing multipart/form-data
 
-
-
+app.use(bodyParser.json()); // for parsing application/json
+//app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 app.use(express.static('public'));
 
@@ -26,12 +28,6 @@ app.post("/subscribe", function (req, res) {
 
 
 });
-var bodyParser = require('body-parser');
-//var multer = require('multer'); // v1.0.5
-//var upload = multer(); // for parsing multipart/form-data
-
-app.use(bodyParser.json()); // for parsing application/json
-//app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 
 
